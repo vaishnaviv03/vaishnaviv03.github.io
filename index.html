@@ -1,3 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
 <div class="about-section">
   <h1>Welcome!</h1>
   <p>This is the landing site for my introduction.</p>
@@ -14,9 +91,11 @@
         <p>I am currently working as a Software Engineer at Cisco. I work in the MIG division. I am currently pursuing my second semester in M.Tech in Software Engineering at Bits Pilani.</p>
         <p>I completed my Bachelor in Engineering from BMS Institute of Technology & Management, Bangalore. I did my schooling from Ryan International School, also in Bangalore.</p>
         <p>My hobbies include reading, painting and binge watching series.</p>
-        <p>2021mt93064@wilp.bits-pilani.ac.in</p>
-        <p><button class="button">Contact</button></p>
+        <a href = "mailto: 2021mt93064@wilp.bits-pilani.ac.in">Contact Me</a>
       </div>
     </div>
   </div>
 </div>
+  
+</body>
+</html>
